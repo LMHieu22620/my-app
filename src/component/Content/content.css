@@ -1,0 +1,210 @@
+.content {
+  position: relative;
+}
+.content-ctn {
+  margin-top: 100px;
+  display: flex;
+}
+.content-option {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.content-option-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.content-option-item {
+  margin-top: 20px;
+  display: grid;
+}
+.content-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content-card {
+  position: relative;
+  margin: auto;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  border: 1px solid #48ccb3;
+  width: 84%;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  height: 300px;
+}
+.content-card:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.content-card__image {
+  position: relative;
+  overflow: hidden;
+  width: 340px;
+  display: block;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+.content-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.content-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.content-card:hover img {
+  transform: scale(1.25);
+}
+.content-card:hover .content-card__desctiption {
+  bottom: 0;
+}
+.content-card:hover .content-card__name {
+  display: none;
+}
+.content-card h1 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  letter-spacing: 3px;
+  z-index: 100;
+}
+.content-card img {
+  height: 100%;
+  transition: 0.25s;
+  width: 100%;
+}
+.content-card .content-card__desctiption {
+  position: absolute;
+  bottom: -55%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.content-card .content-card__desctiption h3 {
+  margin: 0 0 20px;
+  padding: 0;
+}
+.content-card .content-card__desctiption p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.content-card .content-card__desctiption button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 0;
+  padding: 10px 30px;
+  background-color: #48ccb3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.content-card__desctiption h3 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  position: relative;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+.pagination-ctn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.number-page {
+  display: flex;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+.number-page-mid {
+  margin: 0 10px;
+}
+.number-page div {
+  padding: 8px;
+  border: 1px solid #48ccb3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.number-page div:hover {
+  background-color: #48ccb3;
+}
+.pagination-next:hover {
+  color: #48ccb3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.pagination-prev:hover {
+  color: #48ccb3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media (max-width: 1023px) {
+  .content-card {
+    height: 320px;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .content-card {
+    height: 280px;
+  }
+  .content-card .content-card__desctiption {
+    bottom: -62%;
+  }
+}
+@media (max-width: 739px) {
+  .content-card {
+    height: 200px;
+  }
+  .content-card .content-card__desctiption {
+    position: absolute;
+    bottom: -114%;
+  }
+  .content-card__desctiption h3 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .content-card .content-card__desctiption p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .content-card .content-card__desctiption button {
+    padding: 1px 17px;
+    font-size: 1.2rem;
+    margin: 3px 0 0;
+  }
+}

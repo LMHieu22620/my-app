@@ -1,0 +1,142 @@
+.login {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.login__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./react.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login__cart {
+  margin: auto;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.login__cart-container {
+  padding: 0 32px;
+}
+.login__cart-dn {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.login__cart-item {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -12px;
+}
+
+.login__cart-item-itemone {
+  color: #d2cece;
+  display: inline-flex;
+  font-weight: 400;
+}
+
+.login__cart-item-itemtwo:hover {
+  color: #b6dbeb;
+  transition: all linear 0.2s;
+}
+
+.login__cart-item-itemtwo {
+  font-weight: 600;
+  color: #77c9eb;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.auth-form__input {
+  width: 100%;
+  height: 40px;
+  margin-top: 16px;
+  padding: 0 12px;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #77c9eb;
+  outline: none;
+  height: 50px;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 26px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #b6dbeb;
+  transition: all linear 0.2s;
+}
+
+.login__cart-Forgot {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-flex;
+  margin: 20px 111px;
+  cursor: pointer;
+}
+
+.login__cart-Forgot-pw {
+  cursor: pointer;
+  padding: 0;
+  color: #f3f3f3;
+}
+.login__cart-Forgot-pw:hover {
+  color: #f3f3f3;
+  transition: all linear 0.2s;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .login__overlay {
+    background-position: right;
+  }
+  .login__cart {
+    width: 350px;
+  }
+  .login__cart-Forgot {
+    font-size: 1.6rem;
+    margin: 20px 86px;
+  }
+}
+@media (max-width: 739px) {
+  .login__cart-dn {
+    font-size: 2rem;
+  }
+  .login__cart-item {
+    font-size: 1.3rem;
+  }
+  .auth-form__input {
+    font-size: 1.1rem;
+  }
+  .btn-login {
+  
+    font-size: 1.3rem;
+  }
+  .login__overlay {
+    background-position: right;
+  }
+  .login__cart {
+    width: 300px;
+  }
+  .login__cart-Forgot {
+    font-size: 1.1rem;
+    margin: 20px 79px;
+  }
+}

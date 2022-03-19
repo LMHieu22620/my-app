@@ -1,0 +1,25 @@
+.footer {
+  padding: 50px 0;
+  box-shadow: rgba(159, 157, 165) 0px 8px 24px;
+  font-size: 1.1rem;
+  margin-top: 100px;
+}
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer__logo {
+  height: 100px;
+}
+.footer__about {
+  margin-bottom: 1.5rem;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.footer__content p {
+  margin-bottom: 1.25rem;
+}
